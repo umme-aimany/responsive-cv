@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Unique CV</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS here */
+        .bg-theme {
+            background-color: #008080; /* Teal background */
+        }
+        .text-theme {
+            color: #000; /* Black text */
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-theme text-white py-4">
+        <div class="container mx-auto text-center">
+            <img src="your-photo.jpg" alt="Your Photo" class="mx-auto w-32 h-32 rounded-full mb-4 border-4 border-white">
+            <h1 id="name" class="text-4xl font-bold animate__animated animate__fadeIn">Umme Aiman</h1>
+            <p class="text-theme">Front-end Developer</p>
+        </div>
+    </header>
+
+    <section class="container mx-auto mt-8 px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="p-4 bg-white rounded shadow-md">
+                <h2 class="text-2xl font-bold animate__animated animate__fadeIn">About Me</h2>
+                <p class="mt-4 text-theme">
+                    I'm Umme Aiman, a passionate front-end developer with a strong dedication to creating visually appealing and highly functional websites. I thrive on turning complex design concepts into pixel-perfect, responsive web applications that provide seamless user experiences.
+                </p>
+                <p class="mt-4 text-theme">
+                    My journey in web development began with a curiosity for technology and a love for problem-solving. Over the years, I have honed my skills in HTML5, CSS3, and JavaScript, and I'm proficient in popular front-end libraries and frameworks such as React.js and Vue.js.
+                </p>
+                <p class="mt-4 text-theme">
+                    I am committed to staying updated with the latest industry trends and best practices in web development, ensuring that I can deliver modern and cutting-edge solutions to my clients. Collaboration, attention to detail, and a strong work ethic are at the core of my work philosophy.
+                </p>
+                <p class="mt-4 text-theme">
+                    When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or sketching out user interface ideas. I'm excited about the limitless possibilities that the world of front-end development offers and look forward to bringing innovative solutions to your projects.
+                </p>
+            </div>
+
+            <div class="p-4 bg-white rounded shadow-md">
+                <h2 class="text-2xl font-bold animate__animated animate__fadeIn">Skills</h2>
+                <ul class="animate__animated animate__fadeIn text-theme" id="skillsList">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>React.js</li>
+                    <li>Vue.js</li>
+                    <li>Angular</li>
+                    <li>Responsive Web Design</li>
+                    <li>Version Control (Git)</li>
+                    <li>UI/UX Design</li>
+                </ul>
+                <button id="skillsButton" class="bg-theme hover:bg-orange-600 text-white font-bold py-2 px-4 rounded mt-4 transition duration-300 ease-in-out">Toggle Animation</button>
+            </div>
+        </div>
+
+        <div class="mt-8 p-4 bg-white rounded shadow-md">
+            <h2 class="text-2xl font-bold animate__animated animate__fadeIn">Experience</h2>
+            <div class="mt-4">
+                <h3 class="text-xl font-semibold text-theme">Front-end Developer</h3>
+                <p class="text-theme">Company XYZ - January 2022 to Present</p>
+                <p class="text-theme">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac efficitur felis.</p>
+            </div>
+        </div>
+
+        <div class="mt-8 p-4 bg-white rounded shadow-md">
+            <h2 class="text-2xl font-bold animate__animated animate__fadeIn">Education</h2>
+            <div class="mt-4">
+                <h3 class="text-xl font-semibold text-theme">Undergraduate Degree in Computer Science</h3>
+                <p class="text-theme">Your University - Graduated in May 2021</p>
+                <h3 class="text-xl font-semibold text-theme">Intermediate (HSSC)</h3>
+                <p class="text-theme">Your High School - Graduated in May 2017</p>
+                <h3 class="text-xl font-semibold text-theme">Matriculation (SSC)</h3>
+                <p class="text-theme">Your Middle School - Graduated in May 2015</p>
+                <button id="educationButton" class="bg-theme hover:bg-orange-600 text-white font-bold py-2 px-4 rounded mt-4 transition duration-300 ease-in-out">Toggle Animation</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-theme text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 Umme Aiman</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript (if needed) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"></script>
+    <script src="./app.js"></script>
+    <script>
+        // // Add animation effects to buttons
+        // const skillsButton = document.getElementById('skillsButton');
+        // const educationButton = document.getElementById('educationButton');
+
+        // skillsButton.addEventListener('click', () => {
+        //     const skillsList = document.getElementById('skillsList');
+        //     skillsList.classList.toggle('animate__fadeIn');
+        // });
+
+        // educationButton.addEventListener('click', () => {
+        //     const educationInfo = document.querySelectorAll('.mt-4 p');
+        //     educationInfo.forEach((info) => {
+        //         info.classList.toggle('animate__fadeIn');
+        //     });
+        // });
+    </script>
+</body>
+</html>
